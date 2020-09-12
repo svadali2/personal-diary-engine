@@ -1,5 +1,7 @@
-com/diary/controller/DiaryEntryController.java
- com.diary.controller.DiaryEntryController
+com/diary/service/ValidatorService.java
+ com.diary.service.ValidatorService
+exception/EntryDoesNotExistException.java
+ exception.EntryDoesNotExistException
 com/diary/service/EntryService.java
  com.diary.service.EntryService
 com/diary/db/EntryRepository.java
@@ -8,8 +10,8 @@ com/diary/model/User.java
  com.diary.model.User
 com/diary/configuration/DiaryEngineConfiguration.java
  com.diary.configuration.DiaryEngineConfiguration
-exception/EntryDoesNotExistException.java
- exception.EntryDoesNotExistException
+com/diary/SwaggerConfiguration.java
+ com.diary.SwaggerConfiguration
 com/diary/configuration/MongoConfiguration.java
  com.diary.configuration.MongoConfiguration
 com/diary/controller/AuthController.java
@@ -24,5 +26,5 @@ com/diary/db/UserRepository.java
  com.diary.db.UserRepository
 com/diary/PersonalDiaryEngineApplication.java
  com.diary.PersonalDiaryEngineApplication
-com/diary/SwaggerConfiguration.java
- com.diary.SwaggerConfiguration
+com/diary/controller/DiaryEntryController.java
+ com.diary.controller.DiaryEntryController
