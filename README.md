@@ -17,6 +17,8 @@ The Auth Controller has one single endpoint that returns a new jwt token for eve
 
 Every endpoint in the Diary Enginer Controller takes in an authorization header(strangely enough we are using it for authentication), and then reverse computes a username which is stored in the db with every entry. So, everytime, one wants to update/get a particular entry of a diary object, he/she will only have access to the entries under one's username. 
 
+All code in the files have been unit tested thoroughly. Feel free to run the tests in the respective project folders.
+
 # Data Model
 I put a basic data model as below for the Entry(feel free to use this for testing create operations as well:
 ```
