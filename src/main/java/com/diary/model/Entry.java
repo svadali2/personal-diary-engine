@@ -2,6 +2,7 @@ package com.diary.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -12,15 +13,23 @@ import java.util.List;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 @Document(collection = "Entries")
+@NoArgsConstructor
 public class Entry {
     @Id
-    @GeneratedValue
-    private Long id;
+    private int id;
+    private String username;
     private String words;
-    private SimpleDateFormat dateTime;
+    private String dateTime;
     private String theme;
     private List<URL> links;
+
+    public Entry(String words, String dateTime, String theme, List<URL> links, String username) {
+        this.words = words;
+        this.dateTime = dateTime;
+        this.theme = theme;
+        this.links = links;
+        this.username = username;
+    }
 }

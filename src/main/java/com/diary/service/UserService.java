@@ -4,13 +4,19 @@ import com.diary.db.UserRepository;
 import com.diary.model.User;
 import com.google.gson.Gson;
 import com.mongodb.client.MongoCollection;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.stereotype.Service;
 
 @Slf4j
+@Service
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserService {
 
     @Autowired
