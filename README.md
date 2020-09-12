@@ -7,7 +7,10 @@ a diary engine that gives one the ability to:
 4. provides user based jwt auth so that users can securely access information
 
 # Testing
-Open up your favorite ide and run the PersonalDiaryEngineApplication.java program
+
+To test endpoints, feel free to go to this link: https://personal-diary-engine.herokuapp.com/swagger-ui.html . Otherwise, you could run it locally as well. Keep reading for instructions.
+
+Open up your favorite ide and run the PersonalDiaryEngineApplication.java program.
 
 This should open up a localhost server from where you can connect to http://localhost:8080/swagger-ui.html# to test out the endpoints.
 
