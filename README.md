@@ -19,7 +19,7 @@ Every endpoint in the Diary Enginer Controller takes in an authorization header(
 
 # Data Model
 I put a basic data model as below for the Entry(feel free to use this for testing create operations as well:
-
+```
 {
   "id": 80393746,
   "username": "john" 
@@ -30,8 +30,9 @@ I put a basic data model as below for the Entry(feel free to use this for testin
     "https://www.google.com"
   ]
 }
-
+```
 This ensures there are a group of links associated with a particular entry. The datetime object has to be in the specific format given - 'dd-mm-yy hh-mm-ss'. There is also validation on the links and they have to be valid urls. The id is optional and will be generated in the backend. Here is a sample request:
+```
 {
   "username": "john" 
   "words": "good morning",
@@ -41,7 +42,11 @@ This ensures there are a group of links associated with a particular entry. The 
     "https://www.google.com"
   ]
 }
+```
 
-I used a MongoDb for the persistence layer and used JPA and Hibernate along with SpringBoot to perform crud ops on the db.
+I used a MongoDb for the persistence layer and used JPA and Hibernate along with SpringBoot to perform crud ops on the db. 
 
 MongoDB connection string: mongodb+srv://admin:admin@cluster0.9bskj.mongodb.net/test?authSource=admin&replicaSet=atlas-goh1fv-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true
+
+
+Please feel free to reach out with any queries. Thanks!
